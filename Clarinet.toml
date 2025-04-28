@@ -1,0 +1,29 @@
+[project]
+name = 'Decentralized-Public-Infrastructure-Maintenance'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.asset-registration]
+path = 'contracts/asset-registration.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.maintenance-scheduling]
+path = 'contracts/maintenance-scheduling.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.work-verification]
+path = 'contracts/work-verification.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
